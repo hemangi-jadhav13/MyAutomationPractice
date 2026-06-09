@@ -1,0 +1,25 @@
+class LoanCalculator {
+
+    // Method with one parameter
+    void calculateLoan(int amount) {
+        System.out.println("Loan Amount: " + amount);
+        System.out.println("Interest Rate: Default Rate Applied");
+    }
+
+    // Overloaded method with two parameters
+    void calculateLoan(int amount, double interestRate) {
+        System.out.println("Loan Amount: " + amount);
+        System.out.println("Interest Rate: " + interestRate + "%");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        LoanCalculator loan = new LoanCalculator();
+
+        loan.calculateLoan(50000);
+        System.out.println();
+
+        loan.calculateLoan(50000, 8.5);
+    }
+}
