@@ -1,0 +1,31 @@
+class Engine {
+    void engineInfo() {
+        System.out.println("Engine: 1200cc Petrol Engine");
+    }
+}
+
+class Car {
+    // Aggregation: Car has an Engine
+    Engine engine;
+
+    Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    void showCarDetails() {
+        System.out.println("Car Details:");
+        engine.engineInfo();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Engine eng = new Engine();
+
+        // Passing Engine object to Car
+        Car car = new Car(eng);
+
+        car.showCarDetails();
+    }
+}
