@@ -1,0 +1,30 @@
+interface Transport {
+    void booking();
+}
+
+class Bus implements Transport {
+    @Override
+    public void booking() {
+        System.out.println("Bus ticket booked successfully.");
+    }
+}
+
+class Flight implements Transport {
+    @Override
+    public void booking() {
+        System.out.println("Flight ticket booked successfully.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Transport t;
+
+        t = new Bus();
+        t.booking();
+
+        t = new Flight();
+        t.booking();
+    }
+}
