@@ -1,0 +1,32 @@
+class University {
+    // Static variable
+    static String country = "India";
+
+    // Instance variable
+    String universityName;
+
+    // Constructor
+    University(String universityName) {
+        this.universityName = universityName;
+    }
+
+    // Method to display details
+    void display() {
+        System.out.println("University Name: " + universityName);
+        System.out.println("Country: " + country);
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        University u1 = new University("Mumbai University");
+        University u2 = new University("Pune University");
+        University u3 = new University("Delhi University");
+
+        u1.display();
+        u2.display();
+        u3.display();
+    }
+}
