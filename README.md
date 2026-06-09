@@ -1,2 +1,2 @@
 # MyAutomationPractice
-Automation Practice data
+Java Selenium Playwright Automation 
