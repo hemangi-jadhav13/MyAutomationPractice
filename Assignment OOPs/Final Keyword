@@ -1,0 +1,31 @@
+class Bank {
+    // Final variable
+    final String IFSC = "HDFC0001234";
+
+    // Final method
+    final void showIFSC() {
+        System.out.println("IFSC Code: " + IFSC);
+    }
+}
+
+class HDFCBank extends Bank {
+
+    /*
+    // This will cause a compile-time error
+    @Override
+    void showIFSC() {
+        System.out.println("New IFSC");
+    }
+    */
+}
+
+public class Main {
+    public static void main(String[] args) {
+        HDFCBank bank = new HDFCBank();
+
+        bank.showIFSC();
+
+        // The following statement will also cause an error
+        // bank.IFSC = "HDFC9999999";
+    }
+}
