@@ -1,0 +1,25 @@
+class School {
+    // Instance variable
+    String name = "St. Xavier's School";
+
+    // Default Constructor
+    School() {
+        System.out.println("School Name: " + name);
+    }
+
+    // Method to display location
+    void showLocation() {
+        System.out.println("This School is based out of Kolkata");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Creating object
+        School s = new School();
+
+        // Calling method
+        s.showLocation();
+    }
+}
