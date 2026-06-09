@@ -1,0 +1,41 @@
+class Course {
+    void courseInfo() {
+        System.out.println("This is a course.");
+    }
+}
+
+class Science extends Course {
+    void scienceSubjects() {
+        System.out.println("Science includes Physics, Chemistry, and Biology.");
+    }
+}
+
+class Commerce extends Course {
+    void commerceSubjects() {
+        System.out.println("Commerce includes Accounts, Economics, and Business Studies.");
+    }
+}
+
+class Arts extends Course {
+    void artsSubjects() {
+        System.out.println("Arts includes History, Geography, and Political Science.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Science s = new Science();
+        Commerce c = new Commerce();
+        Arts a = new Arts();
+
+        s.courseInfo();
+        s.scienceSubjects();
+
+        c.courseInfo();
+        c.commerceSubjects();
+
+        a.courseInfo();
+        a.artsSubjects();
+    }
+}
