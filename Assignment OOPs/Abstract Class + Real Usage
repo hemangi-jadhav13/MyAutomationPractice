@@ -1,0 +1,44 @@
+abstract class Employee {
+
+    // Abstract method
+    abstract void calculateSalary();
+
+    // Concrete method
+    void employeeDetails() {
+        System.out.println("Employee Details");
+    }
+}
+
+class FullTimeEmployee extends Employee {
+    @Override
+    void calculateSalary() {
+        int monthlySalary = 50000;
+        System.out.println("Full-Time Employee Salary: " + monthlySalary);
+    }
+}
+
+class PartTimeEmployee extends Employee {
+    @Override
+    void calculateSalary() {
+        int hoursWorked = 80;
+        int ratePerHour = 300;
+        int salary = hoursWorked * ratePerHour;
+
+        System.out.println("Part-Time Employee Salary: " + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        FullTimeEmployee fte = new FullTimeEmployee();
+        fte.employeeDetails();
+        fte.calculateSalary();
+
+        System.out.println();
+
+        PartTimeEmployee pte = new PartTimeEmployee();
+        pte.employeeDetails();
+        pte.calculateSalary();
+    }
+}
