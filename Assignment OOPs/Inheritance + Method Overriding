@@ -1,0 +1,22 @@
+class Vehicle {
+    public void fuelType() {
+        System.out.println("Runs on fuel");
+    }
+}
+
+class ElectricCar extends Vehicle {
+    @Override
+    public void fuelType() {
+        System.out.println("Runs on electricity");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle();
+        ElectricCar car = new ElectricCar();
+
+        vehicle.fuelType();
+        car.fuelType();
+    }
+}
