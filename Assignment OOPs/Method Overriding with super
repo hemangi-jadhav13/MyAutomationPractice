@@ -1,0 +1,21 @@
+class Hospital {
+    void emergencyService() {
+        System.out.println("Hospital provides emergency services.");
+    }
+}
+
+class CityHospital extends Hospital {
+    @Override
+    void emergencyService() {
+        super.emergencyService(); // Call parent class method
+        System.out.println("City Hospital provides 24/7 emergency services.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        CityHospital hospital = new CityHospital();
+
+        hospital.emergencyService();
+    }
+}
