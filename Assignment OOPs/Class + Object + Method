@@ -1,0 +1,22 @@
+class Library {
+    // Instance variable
+    String libraryName = "City Library";
+
+    // Default constructor
+    Library() {
+        System.out.println("Welcome to the Library!");
+    }
+
+    // Method
+    void showLocation() {
+        System.out.println("This library is located in Mumbai");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Library lib = new Library();
+
+        lib.showLocation();
+    }
+}
