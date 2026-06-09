@@ -1,0 +1,16 @@
+class GovernmentRules {
+    // Final constant
+    final int MAX_WORKING_HOURS = 8;
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        GovernmentRules rules = new GovernmentRules();
+
+        System.out.println("Maximum Working Hours: " + rules.MAX_WORKING_HOURS);
+
+        // The following statement will cause a compile-time error
+        // rules.MAX_WORKING_HOURS = 10;
+    }
+}
