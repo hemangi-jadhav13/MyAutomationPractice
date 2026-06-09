@@ -1,0 +1,20 @@
+class Mall {
+
+    // Default Constructor
+    Mall() {
+        System.out.println("Welcome to the Mall");
+    }
+
+    // Parameterized Constructor
+    Mall(String mallName) {
+        this(); // Calls the default constructor
+        System.out.println("Mall Name: " + mallName);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Mall m = new Mall("Phoenix Mall");
+    }
+}
