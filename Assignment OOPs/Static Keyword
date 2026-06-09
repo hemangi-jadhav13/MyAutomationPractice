@@ -1,0 +1,35 @@
+class Student {
+    // Static variable
+    static String collegeName = "ABC College";
+
+    // Instance variables
+    String name;
+    int rollNo;
+
+    // Constructor
+    Student(String name, int rollNo) {
+        this.name = name;
+        this.rollNo = rollNo;
+    }
+
+    // Method to display details
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("College Name: " + collegeName);
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student s1 = new Student("Rahul", 101);
+        Student s2 = new Student("Priya", 102);
+        Student s3 = new Student("Amit", 103);
+
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}
