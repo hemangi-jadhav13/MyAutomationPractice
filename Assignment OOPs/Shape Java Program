@@ -1,0 +1,38 @@
+class Shape {
+    // Instance variable
+    double length;
+
+    // Constructor
+    Shape(double length) {
+        this.length = length;
+    }
+
+    // Method to calculate area of square
+    void square() {
+        double area = length * length;
+        System.out.println("Area of Square = " + area);
+    }
+
+    // Method to calculate area of rectangle
+    void rectangle(double width) {
+        double area = length * width;
+        System.out.println("Area of Rectangle = " + area);
+    }
+
+    // Method to calculate area of circle
+    void circle() {
+        double area = 3.14 * length * length;
+        System.out.println("Area of Circle = " + area);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Shape s = new Shape(5);
+
+        s.square();
+        s.rectangle(10);
+        s.circle();
+    }
+}
