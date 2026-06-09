@@ -1,0 +1,42 @@
+class School {
+    // Instance variables
+    String name;
+    String address;
+    int strength;
+
+    // Constructor with two parameters
+    School(String name, String address) {
+        this.name = name;
+        this.address = address;
+        this.strength = 0; // Default value
+    }
+
+    // Constructor with three parameters
+    School(String name, String address, int strength) {
+        this.name = name;
+        this.address = address;
+        this.strength = strength;
+    }
+
+    // Method to display details
+    void displayDetails() {
+        System.out.println("School Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Strength: " + strength);
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Object using two-parameter constructor
+        School s1 = new School("DAV Public School", "Mumbai");
+
+        // Object using three-parameter constructor
+        School s2 = new School("St. Xavier's School", "Kolkata", 1200);
+
+        s1.displayDetails();
+        s2.displayDetails();
+    }
+}
