@@ -1,0 +1,43 @@
+class Account {
+    // Private variables
+    private String accountHolderName;
+    private double balance;
+
+    // Setter for accountHolderName
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    // Getter for accountHolderName
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    // Setter for balance with validation
+    public void setBalance(double balance) {
+        if (balance < 0) {
+            System.out.println("Warning: Balance cannot be negative!");
+        } else {
+            this.balance = balance;
+        }
+    }
+
+    // Getter for balance
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Account acc = new Account();
+
+        // Updating values through setters
+        acc.setAccountHolderName("Hema");
+        acc.setBalance(5000);
+        acc.setBalance(-1000); // Invalid balance
+
+        System.out.println("Account Holder: " + acc.getAccountHolderName());
+        System.out.println("Balance: " + acc.getBalance());
+    }
+}
