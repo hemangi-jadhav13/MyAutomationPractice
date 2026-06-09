@@ -1,1 +1,54 @@
+class Employee {
+    // Private instance variables
+    private int empId;
+    private String empName;
+    private double salary;
 
+    // Getter and Setter for empId
+    public int getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    // Getter and Setter for empName
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+
+    // Getter and Setter for salary
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    // Method to display employee details
+    public void displayDetails() {
+        System.out.println("Employee ID: " + empId);
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Salary: " + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+
+        // Assign values using setters
+        emp.setEmpId(101);
+        emp.setEmpName("Hema");
+        emp.setSalary(50000);
+
+        // Display employee details
+        emp.displayDetails();
+    }
+}
