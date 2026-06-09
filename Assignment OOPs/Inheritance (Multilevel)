@@ -1,0 +1,27 @@
+class Device {
+    void start() {
+        System.out.println("Device started");
+    }
+}
+
+class Mobile extends Device {
+    void calling() {
+        System.out.println("Calling...");
+    }
+}
+
+class SmartPhone extends Mobile {
+    void internet() {
+        System.out.println("Internet is connected");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SmartPhone phone = new SmartPhone();
+
+        phone.start();      // Method from Device
+        phone.calling();    // Method from Mobile
+        phone.internet();   // Method from SmartPhone
+    }
+}
